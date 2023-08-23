@@ -1,0 +1,66 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    min-height: 85dvh;
+    padding: 20px 50px;
+    margin-bottom: 20px;
+}
+.main__landing-picture{
+    width: 50vw;
+    max-width: 400px;
+    height: 50vw;
+    max-height: 400px;
+    margin: 20px;
+}
+main > aside{
+    transition: all .2s;
+    font-family: 'Noto Serif', sans-serif;
+    margin: 20px;
+} 
+main > aside h1{
+    color: #85B745;
+    font-size: 3.5em;
+    font-weight: 400;
+}
+main > aside p{
+    font-size: 1.3em;
+    margin-bottom: 50px;
+}
+main > aside a{
+    transition: all .3s;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    padding: 20px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    background-color: #85B745;
+    box-shadow: 10px 10px 0px #23674C;
+    color: white;
+}
+main > aside a:hover{
+    background-color: #23674C;
+    box-shadow: -10px -10px 0px #85B745
+}
+main > aside a:active{
+    color: rgba(255, 255, 255, 0.644);
+    background-color: #85B745;
+    box-shadow: -10px -10px 0px #23674C;
+}
+
+@media screen and (max-width: 972px){
+    main{
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .main__landing-picture{
+        margin-bottom: 0px;
+    }
+    main > aside{
+        text-align: center;
+        margin-top: 0px;
+    }
+}
